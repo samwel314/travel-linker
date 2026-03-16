@@ -3,7 +3,13 @@
 Travel Linker is a multi-platform system designed to connect travel service providers with customers through a unified management platform. The project consists of a web dashboard and a mobile application, supported by a centralized backend.
 
 ---
+## 🏗️ Architecture & Design Decisions
 
+- **Layered Architecture** — separated Presentation, Business Logic, and Data Access layers
+- **REST API + MVC** — dual interface: MVC dashboard for web, REST API for mobile clients  
+- **Claims-based Authorization** — employees access only their assigned entities
+- **Scheduling System** — custom logic to prevent double-booking of rooms and vehicles
+- **EF Core** — code-first approach with relational schema design
 ## 👥 User Roles
 
 ### Customer
